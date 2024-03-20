@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+   <definition name="baseLayout" template="/WEB-INF/views/layout.jsp">
+      <put-attribute name="title" value=""/>
+      <put-attribute name="top" value="/WEB-INF/views/top.jsp"/>
+      <put-attribute name="body" value=""/>
+      <put-attribute name="footer" value="/WEB-INF/views/footer.jsp"/>
+   </definition>
+   
+	<definition name="main" extends="baseLayout">
+		<put-attribute name="title" value="이젠 시스템 :: 메인화면"/>
+		<put-attribute name="body" value="/WEB-INF/views/main.jsp"/>
+	</definition>
+	<definition name="input" extends="baseLayout">
+		<put-attribute name="title" value="이젠 시스템 :: 입력"/>
+		<put-attribute name="body" value="/WEB-INF/views/info/input.jsp"/>
+	</definition>
+	<definition name="output" extends="baseLayout">
+		<put-attribute name="title" value="이젠 시스템 :: 출력"/>
+		<put-attribute name="body" value="/WEB-INF/views/info/output.jsp"/>
+	</definition>
+   
+</tiles-definitions>
